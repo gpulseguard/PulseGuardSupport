@@ -31,6 +31,16 @@ public class TabletSupport extends AppCompatActivity {
 
             }
         });
+
+        ImageButton samsungSupport = (ImageButton) findViewById(R.id.samsungButton);
+        samsungSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSamsungSupport();
+            }
+        });
+
+
     }
 
 
@@ -50,4 +60,10 @@ public class TabletSupport extends AppCompatActivity {
         Intent intent = new Intent(this, LenovoSupport.class);
         startActivity(intent);
     }
+
+    public void openSamsungSupport(){
+        Intent intent = new Intent(this, SamsungSupport.class);
+        startActivity(intent);
+    }
+
 }

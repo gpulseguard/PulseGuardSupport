@@ -42,6 +42,22 @@ public class MainActivity extends AppCompatActivity {
                 openTabletSupportActivity();
             }
         });
+
+        Button pagerSupportButton = (Button) findViewById(R.id.PGLinkButton);
+        pagerSupportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPagerSupportActivity();
+            }
+        });
+
+        Button emailSupport = (Button) findViewById(R.id.EmailButton);
+        emailSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openEmailSupportActivity();
+            }
+        });
     }
 
     //----------------------------------------End of onCreate()--------------------------------//
@@ -60,6 +76,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openTabletSupportActivity(){
         Intent intent = new Intent(this, TabletSupport.class);
+        startActivity(intent);
+    }
+
+    public void openPagerSupportActivity(){
+        Intent intent = new Intent(this, PagerSupport.class);
+        startActivity(intent);
+    }
+
+    public void openEmailSupportActivity(){
+        Intent intent = new Intent(this, SupportEmail.class);
         startActivity(intent);
     }
 

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class TabletSupport extends AppCompatActivity {
     @Override
@@ -12,8 +13,8 @@ public class TabletSupport extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tablet_support);
 
-        Button senSupBackButton = (Button) findViewById(R.id.sensorSupportBackButton);
-        senSupBackButton.setOnClickListener(new View.OnClickListener() {
+        Button tabSupportBackButton = (Button) findViewById(R.id.tabSupportBackButton);
+        tabSupportBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMainActivity();
@@ -21,12 +22,32 @@ public class TabletSupport extends AppCompatActivity {
             }
         });
 
+
+        ImageButton lenovoSupport = (ImageButton) findViewById(R.id.lenovoButton);
+        lenovoSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openLenovoSupport();
+
+            }
+        });
     }
+
+
+
+
+
+
 
     //-------------------------End of onCreate----------------------//
 
     public void openMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openLenovoSupport(){
+        Intent intent = new Intent(this, LenovoSupport.class);
         startActivity(intent);
     }
 }

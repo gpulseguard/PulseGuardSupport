@@ -9,68 +9,42 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="395dp"
+        android:layout_width="323dp"
 
-        android:layout_height="94dp"
+        android:layout_height="95dp"
         android:text="Rhythm 24 Troubleshooting"
-        android:textSize="35dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.031" />
 
-    <TextView
-        android:layout_width="362dp"
-        android:layout_height="45dp"
-        android:text="For connection issues, please try the following:"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="327dp"
-        android:layout_height="53dp"
-        android:text="Restarting the sensor. If the green lights on the back do not turn off, please contact support"
-        android:textSize="15dp"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="367dp"
+        android:layout_height="318dp"
+        android:src="@drawable/rhythm_sup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.75" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="325dp"
-        android:layout_height="39dp"
-        android:text="Charge the sensor fully"
-        android:textSize="15dp"
+        android:layout_width="222dp"
+        android:layout_height="54dp"
+        android:text="For connection issues, please try the following:"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.553" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="325dp"
-        android:layout_height="39dp"
-        android:text="Restart the PulseGuard app as well as the tablet"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.238" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="124dp"
@@ -78,9 +52,9 @@
         android:src="@drawable/rhythm24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintHorizontal_bias="0.979"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.033" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

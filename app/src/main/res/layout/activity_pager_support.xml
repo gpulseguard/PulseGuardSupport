@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.051" />
 
     <Button
-        android:id="@+id/noPagerConnectionButton"
+        android:id="@+id/cantConnectButton"
         android:layout_width="121dp"
         android:layout_height="55dp"
         android:linksClickable="true"

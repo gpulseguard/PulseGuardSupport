@@ -29,6 +29,18 @@ public class PagerSupport extends AppCompatActivity {
             }
         });
 
+        Button cantConnectButton = (Button) findViewById(R.id.cantConnectButton);
+        cantConnectButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPagerConnectionSupportActivity();
+            }
+        });
+
+
+
+
+
 
 
     }
@@ -43,4 +55,11 @@ public class PagerSupport extends AppCompatActivity {
         Intent intent = new Intent(this, PagerNoService.class);
         startActivity(intent);
     }
+
+    public void openPagerConnectionSupportActivity(){
+        Intent intent = new Intent(this, PagerConnectionSupport.class);
+        startActivity(intent);
+    }
+
+
 }

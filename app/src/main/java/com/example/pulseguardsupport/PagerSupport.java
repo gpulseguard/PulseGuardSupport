@@ -21,12 +21,26 @@ public class PagerSupport extends AppCompatActivity {
             }
         });
 
+        Button noServiceButton = (Button) findViewById(R.id.noServiceButton);
+        noServiceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPagerNoService();
+            }
+        });
+
+
 
     }
     //-------------------------End of onCreate----------------------//
 
     public void openMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPagerNoService(){
+        Intent intent = new Intent(this, PagerNoService.class);
         startActivity(intent);
     }
 }

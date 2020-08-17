@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/noPagerConnectionButton"
         android:layout_width="121dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:linksClickable="true"
         android:text="Can't Connect"
         app:layout_constraintBottom_toBottomOf="parent"

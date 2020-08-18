@@ -18,7 +18,7 @@ public class RetrofitClient {
     private static final String API_USERNAME = "api";
 
     //you need to change the value to your API key
-    private static final String API_PASSWORD = "fe24b3863dfe066964b40a59796a9435-c8c889c9-7e23b22c";
+    private static final String API_PASSWORD = "key-456053df0ad5854eecead2c7e920b387";
 
     private static final String AUTH = "Basic " + Base64.encodeToString((API_USERNAME+":"+API_PASSWORD).getBytes(), Base64.NO_WRAP);
 

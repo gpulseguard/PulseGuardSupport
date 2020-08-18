@@ -33,15 +33,13 @@ public class SensorSupport extends AppCompatActivity {
         });
 
 
-    ImageButton tikrButton = (ImageButton) findViewById(R.id.tikrButton);
-    tikrButton.setOnClickListener(new View.OnClickListener()
-
-    {
-        @Override
-        public void onClick (View view){
-        setContentView(R.layout.tikr_sup);
-    }
-    });
+        ImageButton tikrButton = (ImageButton) findViewById(R.id.tikrButton);
+        tikrButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTikrSupport();
+            }
+        });
 }
 
     public void openMainActivity(){
@@ -51,6 +49,11 @@ public class SensorSupport extends AppCompatActivity {
 
     public void openRhythmActivity(){
         Intent intent = new Intent (this, RhythmActivity.class);
+        startActivity(intent);
+    }
+
+    public void openTikrSupport(){
+        Intent intent = new Intent (this, TikrSupport.class);
         startActivity(intent);
     }
 

@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SensorSupport"></activity>
         <activity android:name=".PagerConnectionSupport"/>
+        <activity android:name=".TikrSupport"/>
         <activity android:name=".RhythmActivity"/>
         <activity android:name=".PagerNoService"/>
         <activity android:name=".SupportEmail"/>

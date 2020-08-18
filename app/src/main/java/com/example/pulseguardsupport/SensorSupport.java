@@ -28,7 +28,7 @@ public class SensorSupport extends AppCompatActivity {
         rhythmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.rhythm_sup);
+                openRhythmActivity();
             }
         });
 
@@ -46,6 +46,11 @@ public class SensorSupport extends AppCompatActivity {
 
     public void openMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openRhythmActivity(){
+        Intent intent = new Intent (this, RhythmActivity.class);
         startActivity(intent);
     }
 

@@ -58,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
                 openEmailSupportActivity();
             }
         });
+
+        Button generalSetupButton = (Button) findViewById(R.id.GeneralSetupButton);
+        generalSetupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGeneralSetupActivity();
+            }
+        });
     }
 
     //----------------------------------------End of onCreate()--------------------------------//
@@ -86,6 +94,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openEmailSupportActivity(){
         Intent intent = new Intent(this, SupportEmail.class);
+        startActivity(intent);
+    }
+
+    public void openGeneralSetupActivity(){
+        Intent intent = new Intent(this, GeneralSetup.class);
         startActivity(intent);
     }
 

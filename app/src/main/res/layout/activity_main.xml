@@ -56,6 +56,18 @@
         app:layout_constraintVertical_bias="0.435" />
 
     <Button
+        android:id="@+id/GeneralSetupButton"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+        android:text="General Setup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <Button
         android:id="@+id/EmailButton"
         android:layout_width="157dp"
         android:layout_height="50dp"
